@@ -11,7 +11,7 @@ output:
 require(knitr)
 require(tidyverse)
 require(tigerstats)
-
+wup04data <- read.csv(file = "GSScsv.csv")
 ```
 
 # Introduction
@@ -26,11 +26,19 @@ $H_a$ There is a significant difference in average score on the WORDSUM test bet
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
 
+The methods that will be used to analyze our variables is a boxplot and favstats. 
+
+```{r eval=FALSE}
+wup04data <- wup04data %>%
+mutate(across(where(is.character), as.factor))
+```
+
 # Results
 
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
 
 ## Descriptive Results
+
 
 ### Graphical Descriptive Results
 
