@@ -60,12 +60,20 @@ The median shows that Lt High school is different than all of the subjects excep
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
 ```{r}
-model1 <- aov(WORDSUM~DEGREE,data=wup04data)
+model1 <-aov(WORDSUM~DEGREE,data= wup04data)
 summary.aov(model1)
 ```
 
-the chances of these categories to the same is 0.000236 which is also our pr. So, this defends our case that these can be very similar but never the same.
+``` {r}
+par(mar = c(3, 20, 2, 2))
+plot(TukeyHSD ( model1, conf.level = 0.95),las=2)
+```
+
+There is a 95% of chance that they are similar expect Lt high school to  graduate and high school to graduate which are different.
+
 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+
