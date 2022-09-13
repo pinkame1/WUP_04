@@ -49,6 +49,8 @@ mutate(across(where(is.character), as.factor))
 ```{r}
 boxplot(WORDSUM~DEGREE,data= wup04data)
 ```
+Lt High school is different than junior college and graduate school but is smaller compared to high school and bacholers.  
+
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
