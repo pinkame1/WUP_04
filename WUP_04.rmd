@@ -25,7 +25,7 @@ $H_a$ There is a significant difference in average score on the WORDSUM test bet
 # Methods
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
 
-The methods that will be used to analyze our variables is a boxplot and favstats. 
+The methods that will be used to analyze our variables is a boxplot and favstats.We used WORDSUM which was our integer and DEGREE as the factor. These variables were tested with a graphical, numerical , and inferential results.
 ```{r eval=FALSE}
 wup04data <- wup04data %>%
 mutate(across(where(is.character), as.factor))
@@ -76,4 +76,4 @@ There is a 95% of chance that they are similar expect Lt high school to  graduat
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
 
-
+Lt high school is different from junior college and graduate school. It could be similar to high school and bachelor. The box plot explained this information by physically graphing the variable. Next the median shows that Lt High school is different than all of the subjects except Junior College and Bachelor, which are similar. Our numerical test concluded that. Lastly there is a 95% of chance that they are similar expect Lt high school to  graduate and high school to graduate which are different due to our inefertial results.
